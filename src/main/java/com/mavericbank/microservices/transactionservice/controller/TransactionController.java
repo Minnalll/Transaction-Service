@@ -71,4 +71,10 @@ public class TransactionController {
 			throws Throwable {
 		return service.createTransaction(accId, transaction);
 	}
+	
+	// Find Udaya
+	@GetMapping
+	public List<Transaction> retrieveAllTransaction1() {
+		return service.getTransactions();
+	}
 }
